@@ -1,0 +1,59 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Sora:wght@200;300;400&display=swap');
+
+$body-font-family:'Sora', sans-serif;
+$logo-font-family: 'Akaya Telivigala', cursive;
+$font-size: 16px;
+
+
+:root{
+    --fs-xs: 1rem;
+    --fs-s: 1.5rem;
+    --fs-m: 2rem;
+    --fs-l: 2.5rem;
+}
+
+// colors 
+
+$color-primary: white;
+$color-secondary: black;
+$color-body:#28282B;
+
+
+//mixins
+
+@mixin button {
+    font-size:var(--fs-xs);
+        background-color: $color-secondary;
+        padding: .8rem 2rem;
+        border-radius: 5rem;
+        margin-top: 1.5rem;
+        cursor: pointer;
+        border: none;
+            &:hover{
+                transform: scale(0.9);
+            }
+}
+// reset 
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $body-font-family;
+}
+html {
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+button {
+      font-family: $body-font-family;
+}
+
+p {
+    line-height: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
