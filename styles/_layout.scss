@@ -33,6 +33,7 @@
         background-color: inherit;
         border: none;
         cursor: pointer;
+        color: black;
        
     }
     &__list {
@@ -299,6 +300,7 @@
             @include button;
             background-color: $color-primary;
             margin-top: 1rem;
+            color: black;
         }
     }
 
@@ -652,6 +654,7 @@
         border: none;
         margin-left: auto;
         cursor: pointer;
+         font-size: 1.2rem;
     }
     &__question--text{
         display: none;
@@ -678,9 +681,7 @@
         &__question {
             margin-top: 2rem;
         }
-        &__btn{
-            font-size: 1.2rem;
-        }
+       
     }
 }
 

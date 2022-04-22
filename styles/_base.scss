@@ -24,7 +24,7 @@ $color-body:#28282B;
 //mixins
 
 @mixin button {
-    font-size:var(--fs-xs);
+        font-size:var(--fs-xs);
         background-color: $color-secondary;
         padding: .8rem 2rem;
         border-radius: 5rem;

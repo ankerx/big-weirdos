@@ -7,6 +7,7 @@ const card = document.querySelectorAll(".roadmap__card");
 const answerBox = document.querySelectorAll(".faq__answer");
 const openBtn = document.querySelectorAll(".faq__btn");
 
+// hamburger menu
 btn.addEventListener("click", () => {
   nav.classList.toggle("active");
   closeMenu.classList.toggle("active");
@@ -21,18 +22,18 @@ navLink.forEach((link) =>
     btn.classList.remove("active");
   })
 );
+
+// displaying answers on faq
 openBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const question = e.currentTarget.parentElement.parentElement;
     question.classList.toggle("show");
-
-    console.log(question);
   });
 });
 
+// animation on scroll
 window.addEventListener("scroll", () => {
   const height = window.scrollY;
-
   if (height > 1100) {
     card.forEach((card) => card.classList.add("active"));
   }

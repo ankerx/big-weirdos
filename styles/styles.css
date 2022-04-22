@@ -64,6 +64,7 @@ p {
   background-color: inherit;
   border: none;
   cursor: pointer;
+  color: black;
 }
 
 .nav__list {
@@ -412,6 +413,7 @@ p {
   border: none;
   background-color: white;
   margin-top: 1rem;
+  color: black;
 }
 
 .about__btn:hover {
@@ -893,6 +895,7 @@ p {
   border: none;
   margin-left: auto;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .faq__question--text {
@@ -919,9 +922,6 @@ p {
   }
   .faq__question {
     margin-top: 2rem;
-  }
-  .faq__btn {
-    font-size: 1.2rem;
   }
 }
 
