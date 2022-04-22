@@ -896,6 +896,7 @@ p {
   margin-left: auto;
   cursor: pointer;
   font-size: 1.2rem;
+  color: black;
 }
 
 .faq__question--text {
