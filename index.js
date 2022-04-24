@@ -48,7 +48,6 @@ gsap.to(".faq", {
     pin: true,
     start: "top top",
     end: "bottom top ",
-    // toggleClass: "active",
     pinSpacing: false,
   },
 });

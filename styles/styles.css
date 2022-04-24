@@ -952,7 +952,7 @@ header {
 
 @media (min-width: 768px) {
   .faq__container {
-    padding: 0 0 2rem 0;
+    padding: 0 0 2.5rem 0;
     margin-bottom: 2rem;
   }
   .faq__questions {
@@ -964,6 +964,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 5rem;
+    padding-bottom: 5rem;
   }
   .faq__flex-one {
     min-width: 40%;
