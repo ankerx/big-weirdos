@@ -703,14 +703,15 @@ header {
         &__questions {
             width: 80%;
             display: flex;
+            justify-content: center;
             gap: 5rem;
         }
          &__flex-one {
-            width: 90%;
+            min-width: 40%;
     }
 
         &__flex-two{
-            width: 90%;
+            min-width: 40%;
         }
         &__question {
             margin-top: 2rem;

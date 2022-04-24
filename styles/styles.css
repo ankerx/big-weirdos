@@ -960,13 +960,16 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 5rem;
   }
   .faq__flex-one {
-    width: 90%;
+    min-width: 40%;
   }
   .faq__flex-two {
-    width: 90%;
+    min-width: 40%;
   }
   .faq__question {
     margin-top: 2rem;
