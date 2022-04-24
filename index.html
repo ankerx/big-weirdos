@@ -17,13 +17,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/styles/styles.css" />
-    <title>Big weirdos</title>
+    <title>Big Weirdos</title>
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
         <nav class="nav">
-          <span class="nav__logo">B.</span>
+          <a class="nav__link" href="#home"> <span class="nav__logo">B.</span></a>
+         
           <button class="nav__menu">
             <i class="fa-solid fa-bars"></i>
             <i class="fa-solid fa-xmark"></i>
@@ -56,7 +57,7 @@
             <div class="hero__box">
               <img class="hero__img" src="/images/bigheads/animation.gif" alt="animation of big heads pictures" />
             </div>
-            <div>
+            <div class="hero__width">
               <h1 class="hero__title">
                 Welcome in the world of
                 <span class="title">Big Weirdos!</span>
@@ -68,10 +69,10 @@
             </div>
           </div>
         </section>
-          </div>
+   
       </header>
       <main>
-        <section id="about"  class="about">
+      <section id="about"  class="about">
           <div class="about__container">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -118,8 +119,8 @@
       </section> 
       <section id="roadmap" class="roadmap">
         <h2 class="roadmap__title1">Roadmap</h2>
+        <div class="roadmap__flex">
         <div class="roadmap__container">
-
           <div class="roadmap__cards">
             <div class="roadmap__card">
               <p class="roadmap__p" >Minting</p>
@@ -133,16 +134,16 @@
             </div>
             <div class="roadmap__card">
               <p class="roadmap__p">Collaborations</p>
-              <h5 class="roadmap__title">Actions for the communities benefit</h5>
-              <p class="roadmap__text">Collaborations with other projects.</p>
+              <h5 class="roadmap__title">Actions for mass adoption</h5>
+              <p class="roadmap__text">Collaborations with other projects giving us more perspectives for long term.</p>
             </div>
             <div class="roadmap__card">
               <p class="roadmap__p">Merch</p>
               <h5 class="roadmap__title">Connection with our community</h5>
-              <p class="roadmap__text">We want this project to be more than just an NFT collection. We want to become the strongest community in NFT space</p>
+              <p class="roadmap__text">We want this project to be more than just an NFT collection. We want to become the strongest community in NFT space.</p>
             </div>
-           
           </div>
+        </div>
         </div>
       </section>
       <section id="collection" class="collection">
@@ -380,7 +381,7 @@
              <div class="faq__flex-two">
              <article class="faq__question">
                <div class="faq__question--title">
-                  <h4>What is the total supply?</h4>
+                  <h4>What's the total supply?</h4>
                     <button class="faq__btn">  
                       <i class="fa-solid fa-plus"></i>
                       <i class="fa-solid fa-minus"></i>
@@ -420,8 +421,60 @@
         </div>
       </section>
       </main>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+      <footer class="footer">
+        <section class="footer__header">
+          <h2>Join The Big Weirdos Club</h2>
+          <button class="footer__btn"> <a class="" href="#">Join us</a></button>
+          <div class="footer__img">
+            <img src="/images/bigheads/footer.svg" alt="image of big head">
+            <img src="/images/bigheads/footer1.svg" alt="image of big head">
+            <img src="/images/bigheads/footer2.svg" alt="image of big head">
+            <img src="/images/bigheads/footer3.svg" alt="image of big head">
+            <img src="/images/bigheads/footer4.svg" alt="image of big head">
+          </div>
+        </section>
+        <div class="footer__links">
+          <div class="footer__box">
+          <div class="footer__box--two">
+              <a class="footer__link--logo" href="#home"> <h2 class="footer__logo">B.</h2></a>
+              <div>
+              <a class="footer__link" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="footer__link" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="footer__link" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="footer__link" href=""><i class="fa-brands fa-discord"></i></a>
+              </div>
+          
+          </div>
+              <nav class="footer__nav">
+             <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#home">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#about">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#roadmap">Roadmap</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#collection">Collection</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          </nav>
+          </div>
+        
+         
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Big Weirdos. All rights reserved.</p>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="index.js"></script>
   </body>
 </html>
+
+      

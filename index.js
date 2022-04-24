@@ -41,6 +41,18 @@ window.addEventListener("scroll", () => {
 
 //
 
+gsap.to(".faq", {
+  scrollTrigger: {
+    trigger: ".faq",
+    scrub: true,
+    pin: true,
+    start: "top top",
+    end: "bottom top ",
+    // toggleClass: "active",
+    pinSpacing: false,
+  },
+});
+
 var swiper = new Swiper(".mySwiper", {
   effect: "cards",
   speed: 250,

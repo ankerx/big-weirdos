@@ -36,7 +36,9 @@ $color-body:#28282B;
             }
 }
 // reset 
-
+*{
+     box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -51,7 +53,10 @@ html {
 button {
       font-family: $body-font-family;
 }
-
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: black;
+}
 p {
     line-height: 1.2rem;
     padding: 0;
