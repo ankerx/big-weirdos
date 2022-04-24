@@ -26,7 +26,7 @@ header {
     }
     
     &__menu {
-        z-index: 100;
+        z-index: 999;
         font-size: var(--fs-m);
         background-color: inherit;
         border: none;
@@ -38,7 +38,7 @@ header {
     &__list {
         font-size: var(--fs-m);
         display: none;
-        z-index: 99;
+        z-index: 988;
         padding: 0 1rem;
         list-style: none;
     }
@@ -650,7 +650,11 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     &__container{
+          display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: $color-primary;
         text-align: center;
         margin-bottom: 4rem;
@@ -665,12 +669,7 @@ header {
         text-transform: uppercase;
         margin-bottom: 1.5rem;
     }
-    &__flex-container{
-         display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
+
     &__question {
 
         border-bottom: 1px solid #404040;
@@ -697,6 +696,10 @@ header {
 
 @media (min-width:768px){
     .faq {
+        &__container {
+                padding: 0 0 2rem 0;
+                margin-bottom: 2rem;
+        }
         &__questions {
             width: 80%;
             display: flex;
@@ -705,14 +708,15 @@ header {
          &__flex-one {
             width: 90%;
     }
-        &__flex-container{
-              margin-top: 3rem;
-        }
+
         &__flex-two{
             width: 90%;
         }
         &__question {
             margin-top: 2rem;
+        }
+        &__title {
+            margin-bottom: 0;
         }
        
     }
@@ -747,7 +751,7 @@ header {
 
 .footer {
      position: relative;
-    z-index: 999;
+    z-index: 444;
     min-height: 100vh;
     width: 100vw;
     display: flex;

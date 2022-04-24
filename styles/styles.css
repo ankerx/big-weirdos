@@ -67,7 +67,7 @@ header {
 }
 
 .nav__menu {
-  z-index: 100;
+  z-index: 999;
   font-size: var(--fs-m);
   background-color: inherit;
   border: none;
@@ -78,7 +78,7 @@ header {
 .nav__list {
   font-size: var(--fs-m);
   display: none;
-  z-index: 99;
+  z-index: 988;
   padding: 0 1rem;
   list-style: none;
 }
@@ -890,9 +890,19 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .faq__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   text-align: center;
   margin-bottom: 4rem;
@@ -907,18 +917,6 @@ header {
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-}
-
-.faq__flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .faq__question {
@@ -953,6 +951,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  .faq__container {
+    padding: 0 0 2rem 0;
+    margin-bottom: 2rem;
+  }
   .faq__questions {
     width: 80%;
     display: -webkit-box;
@@ -963,14 +965,14 @@ header {
   .faq__flex-one {
     width: 90%;
   }
-  .faq__flex-container {
-    margin-top: 3rem;
-  }
   .faq__flex-two {
     width: 90%;
   }
   .faq__question {
     margin-top: 2rem;
+  }
+  .faq__title {
+    margin-bottom: 0;
   }
 }
 
@@ -1003,7 +1005,7 @@ header {
 
 .footer {
   position: relative;
-  z-index: 999;
+  z-index: 444;
   min-height: 100vh;
   width: 100vw;
   display: -webkit-box;
