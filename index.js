@@ -6,7 +6,7 @@ const closeMenu = document.querySelector(".fa-xmark");
 const card = document.querySelectorAll(".roadmap__card");
 const answerBox = document.querySelectorAll(".faq__answer");
 const openBtn = document.querySelectorAll(".faq__btn");
-
+const footerDate = document.getElementById("footer-date");
 // hamburger menu
 btn.addEventListener("click", () => {
   nav.classList.toggle("active");
@@ -39,7 +39,10 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//
+// get date on footer
+
+const date = new Date().getFullYear();
+footerDate.innerHTML = `${date} &copy; Big Weirdos. All rights reserved.`;
 
 gsap.to(".faq", {
   scrollTrigger: {
