@@ -284,6 +284,10 @@ header {
           transform: scale(0.9);
 }
 
+.hero video {
+  width: 90%;
+}
+
 .title {
   color: blue;
   font-weight: 700;
@@ -891,6 +895,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .faq__container {
@@ -920,6 +925,7 @@ header {
 }
 
 .faq__question {
+  margin-bottom: 3rem;
   border-bottom: 1px solid #404040;
 }
 

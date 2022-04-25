@@ -200,6 +200,9 @@ header {
        margin-top: 0;
     }
 }
+.hero video {
+    width: 90%;
+}
 
 .title {
     color:blue;
@@ -651,6 +654,7 @@ header {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        overflow: hidden;
     &__container{
           display: flex;
         justify-content: center;
@@ -671,7 +675,7 @@ header {
     }
 
     &__question {
-
+        margin-bottom: 3rem;
         border-bottom: 1px solid #404040;
     }
     &__question--title {
